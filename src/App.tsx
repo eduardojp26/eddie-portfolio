@@ -1,3 +1,5 @@
+import { useEffect } from "react";
+import { initLenis } from "./lib/lenis";
 import { Hero } from "./components/Hero";
 import { About } from "./components/About";
 import { Experience } from "./components/Experience";
@@ -6,6 +8,11 @@ import { Places } from "./components/Places";
 import { Contact } from "./components/Contact";
 
 function App() {
+  useEffect(() => {
+    const lenis = initLenis();
+    return () => lenis.destroy();
+  }, []);
+
   return (
     <main>
       <Hero />

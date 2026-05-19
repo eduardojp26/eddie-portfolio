@@ -4,4 +4,10 @@ import tailwindcss from '@tailwindcss/vite'
 
 export default defineConfig({
   plugins: [react(), tailwindcss()],
+  optimizeDeps: {
+    include: ["react", "react-dom", "framer-motion"],
+  },
+  resolve: {
+    dedupe: ["react", "react-dom"],
+  },
 })
