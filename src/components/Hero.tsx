@@ -1,4 +1,4 @@
-import { motion } from "motion/react";
+import { motion } from "framer-motion";
 import { HERO } from "../content/data";
 import { TextReveal } from "./ui/TextReveal";
 import { TextRoll } from "./ui/TextRoll";
