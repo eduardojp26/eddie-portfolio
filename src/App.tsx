@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { initLenis } from "./lib/lenis";
+import { SideNav } from "./components/SideNav";
 import { Hero } from "./components/Hero";
 import { About } from "./components/About";
 import { Experience } from "./components/Experience";
@@ -14,14 +15,17 @@ function App() {
   }, []);
 
   return (
-    <main>
-      <Hero />
-      <About />
-      <Experience />
-      <Projects />
-      <Places />
-      <Contact />
-    </main>
+    <>
+      <SideNav />
+      <main>
+        <Hero />
+        <About />
+        <Experience />
+        <Projects />
+        <Places />
+        <Contact />
+      </main>
+    </>
   );
 }
 

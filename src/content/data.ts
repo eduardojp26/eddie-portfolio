@@ -156,14 +156,14 @@ export const PLACES: Place[] = [
     country: "Portugal",
     year: "2024",
     takeaway: "Drink the green wine. Walk the bridge at sunset.",
-    imageSrc: "/img/places/porto.jpg",
+    imageSrc: "/img/places/porto.webp",
   },
   {
     city: "Budapest",
     country: "Hungary",
     year: "2024",
     takeaway: "Thermal baths at 9am, ruin bars at 9pm.",
-    imageSrc: "/img/places/budapest.jpg",
+    imageSrc: "/img/places/budapest.webp",
   },
 ];
 
@@ -172,7 +172,7 @@ export const PLACES: Place[] = [
 // ============================================================
 export const CONTACT = {
   headline: "Let's talk.",
-  email: "edpena2604@gmail.com", // change to your real one
+  email: "eduardojpena26@gmail.com", 
   socials: [
     { label: "GitHub", href: "https://github.com/YOUR_USERNAME" },
     { label: "LinkedIn", href: "https://linkedin.com/in/YOUR_USERNAME" },
