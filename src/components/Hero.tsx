@@ -52,7 +52,7 @@ export function Hero() {
           <motion.a
             key={item.href}
             href={item.href}
-            onClick={(e) => handleNavClick(e, item.href)}
+            onClick={(e: React.MouseEvent<HTMLAnchorElement>) => handleNavClick(e, item.href)}
             variants={{
               hidden: { opacity: 0, y: 20 },
               visible: { opacity: 1, y: 0 },
