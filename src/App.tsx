@@ -7,6 +7,7 @@ import { Experience } from "./components/Experience";
 import { Projects } from "./components/Projects";
 import { Places } from "./components/Places";
 import { Contact } from "./components/Contact";
+import { ScrollProgress } from "./components/ui/ScrollProgress";
 
 function App() {
   useEffect(() => {
@@ -16,6 +17,7 @@ function App() {
 
   return (
     <>
+      <ScrollProgress />
       <SideNav />
       <main>
         <Hero />

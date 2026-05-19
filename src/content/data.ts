@@ -104,7 +104,7 @@ export const PROJECTS: Project[] = [
     blurb: "iOS app for reducing household food waste",
     description: "Pantry tracking, expiration notifications, recipe matching, and gamification. Built with a team of four under Dr. Tie Liu.",
     tech: ["Swift", "SwiftUI", "Supabase", "Edamam API", "Mistral / Navigator AI"],
-    imageSrc: "/img/projects/bytewaste.jpg",
+    imageSrc: "/img/projects/bytewaste.webp",
     links: [
       { label: "GitHub", href: "#" }, // fill in real link
     ],
