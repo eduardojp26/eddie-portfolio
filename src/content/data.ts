@@ -70,7 +70,7 @@ export const EXPERIENCE: ExperienceItem[] = [
     period: "2024 — 2025",
     summary: "Research experience under faculty mentorship.",
     bullets: [
-      "Add your specific research bullets here",
+      "Created python program",
     ],
   },
   {
