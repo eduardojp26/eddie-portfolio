@@ -2,6 +2,9 @@ import { motion } from "motion/react";
 import { HERO } from "../content/data";
 import { TextReveal } from "./ui/TextReveal";
 import { TextRoll } from "./ui/TextRoll";
+import { HeroBlob } from "./ui/HeroBlob";
+import { HeroDateline } from "./ui/HeroDateline";
+// import { HeroPullQuote } from "./ui/HeroPullQuote";
 
 export function Hero() {
   const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
@@ -66,10 +69,17 @@ export function Hero() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 2, duration: 1 }}
-        className="min-h-screen flex flex-col justify-center px-8 md:px-16 lg:px-24 relative"
+        className="min-h-screen flex flex-col items-start px-8 md:px-16 lg:px-24 pt-32 md:pt-40 pb-24 relative"
       >
         ↓ Scroll
       </motion.div>
+      {/* Hero right-side slot — swap component here to test variants */}
+        <div className="hidden md:block absolute right-8 lg:right-24 top-1/2 -translate-y-1/2 pointer-events-none">
+        {/* TRY ONE: */}
+        {<HeroBlob />}
+        {<HeroDateline /> }
+        {/* ]<HeroPullQuote /> */}
+        </div>
     </section>
   );
 }
